@@ -73,7 +73,7 @@ class Plugin(PluginBase):  # 插件类
             with open(self.log_path, 'a', encoding='utf-8') as f:
                 f.write(f'[{dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] 触发测试通知\n')
         
-        schedule_name = self.cw_contexts.get('schedule_name', '')
+        schedule_name = self.cw_contexts.get('Schedule_Name', '')
         if not schedule_name:
             with open(self.log_path, 'a', encoding='utf-8') as f:
                 f.write(f'[{dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] 无法获取明日课程信息：未设置课程表\n')
@@ -193,7 +193,7 @@ class Settings(SettingsBase):
         # 检查当前课表名称
         self.is_backup_schedule = False
         if hasattr(self, 'cw_contexts') and self.cw_contexts:
-            schedule_name = self.cw_contexts.get('schedule_name', '')
+            schedule_name = self.cw_contexts.get('Schedule_Name', '')
             if schedule_name == 'backup.json':
                 self.is_backup_schedule = True
                 # 显示警告信息
