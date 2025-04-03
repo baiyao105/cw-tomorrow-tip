@@ -34,7 +34,7 @@ class Plugin(PluginBase):  # 插件类
         schedule_name = cw_contexts.get('Schedule_Name', '')
         if schedule_name == 'backup.json':
             with open(self.log_path, 'a', encoding='utf-8') as f:
-                f.write(f'[{dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] 检测到备份课表(backup.json)，临时禁用通知\n')
+                f.write(f'[{dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] 检测到调休课表(backup.json)，临时禁用通知\n')
             return
             
         current_time = cw_contexts.get('current_time', '')
@@ -204,7 +204,7 @@ class Settings(SettingsBase):
         
         # 绑定设置
         self.enableTip.setChecked(self.settings.value("enable_tip", True, type=bool))
-        # 如果是备份课表，禁用通知开关
+        # 如果是调休课表，禁用通知开关
         if self.is_backup_schedule:
             self.enableTip.setEnabled(False)
             self.enableTip.setToolTip("当前使用调休课表(backup.json)，通知已临时禁用")
