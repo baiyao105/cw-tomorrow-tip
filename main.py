@@ -31,7 +31,7 @@ class Plugin(PluginBase):  # 插件类
 
     def update(self, cw_contexts):  # 自动更新部分
         super().update(cw_contexts)  # 调用父类更新方法
-        schedule_name = cw_contexts.get('schedule_name', '')
+        schedule_name = cw_contexts.get('Schedule_Name', '')
         if schedule_name == 'backup.json':
             with open(self.log_path, 'a', encoding='utf-8') as f:
                 f.write(f'[{dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}] 检测到备份课表(backup.json)，临时禁用通知\n')
