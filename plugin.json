@@ -1,13 +1,11 @@
 {
     "name": "明日课程提醒",
-    "description": "在当日全部课程结束后弹出提示，显示明天课程相关信息",
+    "description": "在设定的时间时，显示明日课程信息",
     "version": "1.0.0",
     "plugin_ver": 1,
-    "author": "Trae AI",
+    "author": "白杳",
     "settings": true,
-
-    "url": "https://github.com/Class-Widgets/cw-tomorrow-tip",
+    "url": "https://github.com/baiyao105/cw-tomorrow-tip",
     "branch": "main",
-
-    "update_date": "2023/11/15"
+    "update_date": "2025/04/03"
 }
