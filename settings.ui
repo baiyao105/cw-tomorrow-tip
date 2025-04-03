@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>688</width>
-    <height>590</height>
+    <height>639</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -38,7 +38,7 @@
    <item>
     <widget class="TitleLabel" name="TitleLabel">
      <property name="text">
-      <string>设置页面 ψ(｀∇´)ψ</string>
+      <string>设置页面 q(≧▽≦q)</string>
      </property>
     </widget>
    </item>
@@ -56,7 +56,7 @@
         <x>0</x>
         <y>0</y>
         <width>640</width>
-        <height>861</height>
+        <height>557</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_9">
@@ -69,13 +69,6 @@
           <number>3</number>
          </property>
          <item>
-          <widget class="SubtitleLabel" name="SubtitleLabel_2">
-           <property name="text">
-            <string>副标题</string>
-           </property>
-          </widget>
-         </item>
-         <item>
           <widget class="CaptionLabel" name="CaptionLabel_10">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -84,7 +77,7 @@
             </sizepolicy>
            </property>
            <property name="text">
-            <string>功能简介（可选）</string>
+            <string>设置显示方式与内容</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -134,7 +127,7 @@
               <item>
                <widget class="StrongBodyLabel" name="StrongBodyLabel_5">
                 <property name="text">
-                 <string>选项卡1</string>
+                 <string>启用明日课程提醒</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -150,7 +143,7 @@
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>功能简介</string>
+                 <string>在指定时间弹出提示，显示明天课程相关信息</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -179,31 +172,15 @@
             <item>
              <layout class="QVBoxLayout" name="verticalLayout">
               <item>
-               <widget class="LineEdit" name="nameEdit">
+               <widget class="SwitchButton" name="enableTip">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
-                <property name="placeholderText">
-                 <string>自动化名称</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="LineEdit" name="actionEdit">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="placeholderText">
-                 <string>执行动作</string>
+                <property name="checked">
+                 <bool>true</bool>
                 </property>
                </widget>
               </item>
@@ -241,7 +218,7 @@
               <item>
                <widget class="StrongBodyLabel" name="StrongBodyLabel_6">
                 <property name="text">
-                 <string>选项卡2</string>
+                 <string>显示课程数量</string>
                 </property>
                </widget>
               </item>
@@ -254,7 +231,7 @@
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>功能简介</string>
+                 <string>设置提醒中显示的明日课程数量</string>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>
@@ -278,31 +255,20 @@
              </layout>
             </item>
             <item>
-             <widget class="PrimaryPushButton" name="func1">
-              <property name="text">
-               <string>按钮1</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PushButton" name="func2">
-              <property name="text">
-               <string>按钮2</string>
-              </property>
-             </widget>
+             <widget class="SpinBox" name="SpinBox"/>
             </item>
            </layout>
           </widget>
          </item>
          <item>
-          <widget class="CardWidget" name="CardWidget_5">
+          <widget class="CardWidget" name="CardWidget_8">
            <property name="minimumSize">
             <size>
              <width>0</width>
              <height>70</height>
             </size>
            </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
             <property name="leftMargin">
              <number>16</number>
             </property>
@@ -316,19 +282,19 @@
              <number>16</number>
             </property>
             <item>
-             <layout class="QVBoxLayout" name="verticalLayout_10">
+             <layout class="QVBoxLayout" name="verticalLayout_12">
               <property name="spacing">
                <number>0</number>
               </property>
               <item>
-               <widget class="StrongBodyLabel" name="StrongBodyLabel_7">
+               <widget class="StrongBodyLabel" name="StrongBodyLabel_9">
                 <property name="text">
-                 <string>选项卡3</string>
+                 <string>通知显示时间</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="CaptionLabel" name="CaptionLabel_4">
+               <widget class="CaptionLabel" name="CaptionLabel_6">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -336,7 +302,7 @@
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>功能简介</string>
+                 <string>设置提醒的显示时间（秒）</string>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>
@@ -360,7 +326,7 @@
              </layout>
             </item>
             <item>
-             <widget class="SwitchButton" name="SwitchButton"/>
+             <widget class="SpinBox" name="SpinBox_2"/>
             </item>
            </layout>
           </widget>
@@ -394,7 +360,7 @@
               <item>
                <widget class="StrongBodyLabel" name="StrongBodyLabel_8">
                 <property name="text">
-                 <string>选项卡4</string>
+                 <string>显示发送时间</string>
                 </property>
                </widget>
               </item>
@@ -407,7 +373,7 @@
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>功能简介</string>
+                 <string>设置发送通知的指定时间 (tip:不应与其他通知过近)</string>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>
@@ -431,34 +397,113 @@
              </layout>
             </item>
             <item>
-             <widget class="RadioButton" name="RadioButton">
+             <widget class="TimePicker" name="TimePicker">
+              <property name="maximumSize">
+               <size>
+                <width>240</width>
+                <height>30</height>
+               </size>
+              </property>
               <property name="text">
-               <string>选项1</string>
+               <string/>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="RadioButton" name="RadioButton_2">
-              <property name="text">
-               <string>选项2</string>
+             <layout class="QHBoxLayout" name="timeLayout">
+              <property name="spacing">
+               <number>8</number>
               </property>
-             </widget>
+             </layout>
             </item>
            </layout>
           </widget>
          </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_12">
-         <property name="spacing">
-          <number>3</number>
-         </property>
          <item>
-          <widget class="SubtitleLabel" name="SubtitleLabel_3">
-           <property name="text">
-            <string>副标题</string>
+          <widget class="CardWidget" name="CardWidget_5">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>70</height>
+            </size>
            </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>16</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>16</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="StrongBodyLabel" name="StrongBodyLabel_7">
+                <property name="text">
+                 <string>不显示的课程</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CaptionLabel" name="CaptionLabel_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>设置不希望在提醒中显示的课程名称（多个课程用逗号分隔）</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="lightColor" stdset="0">
+                 <color alpha="150">
+                  <red>0</red>
+                  <green>0</green>
+                  <blue>0</blue>
+                 </color>
+                </property>
+                <property name="darkColor" stdset="0">
+                 <color alpha="200">
+                  <red>255</red>
+                  <green>255</green>
+                  <blue>255</blue>
+                 </color>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="LineEdit" name="excludedCoursesEdit">
+              <property name="minimumSize">
+               <size>
+                <width>160</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="placeholderText">
+               <string>如：体育,音乐,美术</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
          <item>
@@ -483,320 +528,16 @@
              <number>16</number>
             </property>
             <item>
-             <layout class="QVBoxLayout" name="verticalLayout_13">
-              <property name="spacing">
-               <number>0</number>
-              </property>
-              <item>
-               <widget class="StrongBodyLabel" name="StrongBodyLabel_9">
-                <property name="text">
-                 <string>选项卡1</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="CaptionLabel" name="CaptionLabel_6">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string>功能简介</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-                <property name="lightColor" stdset="0">
-                 <color alpha="150">
-                  <red>0</red>
-                  <green>0</green>
-                  <blue>0</blue>
-                 </color>
-                </property>
-                <property name="darkColor" stdset="0">
-                 <color alpha="200">
-                  <red>255</red>
-                  <green>255</green>
-                  <blue>255</blue>
-                 </color>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_3">
-              <item>
-               <widget class="LineEdit" name="nameEdit_2">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="placeholderText">
-                 <string>自动化名称</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="LineEdit" name="actionEdit_2">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="placeholderText">
-                 <string>执行动作</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="CardWidget" name="CardWidget_8">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>70</height>
-            </size>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_10">
-            <property name="leftMargin">
-             <number>16</number>
-            </property>
-            <property name="topMargin">
-             <number>16</number>
-            </property>
-            <property name="rightMargin">
-             <number>16</number>
-            </property>
-            <property name="bottomMargin">
-             <number>16</number>
-            </property>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_14">
-              <property name="spacing">
-               <number>0</number>
-              </property>
-              <item>
-               <widget class="StrongBodyLabel" name="StrongBodyLabel_10">
-                <property name="text">
-                 <string>选项卡2</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="CaptionLabel" name="CaptionLabel_7">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string>功能简介</string>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-                <property name="lightColor" stdset="0">
-                 <color alpha="150">
-                  <red>0</red>
-                  <green>0</green>
-                  <blue>0</blue>
-                 </color>
-                </property>
-                <property name="darkColor" stdset="0">
-                 <color alpha="200">
-                  <red>255</red>
-                  <green>255</green>
-                  <blue>255</blue>
-                 </color>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <widget class="PrimaryPushButton" name="func1_2">
+             <widget class="PrimaryPushButton" name="viewLogButton">
               <property name="text">
-               <string>按钮1</string>
+               <string>查看日志</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="PushButton" name="func2_2">
+             <widget class="PrimaryPushButton" name="PrimaryPushButton">
               <property name="text">
-               <string>按钮2</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="CardWidget" name="CardWidget_9">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>70</height>
-            </size>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_11">
-            <property name="leftMargin">
-             <number>16</number>
-            </property>
-            <property name="topMargin">
-             <number>16</number>
-            </property>
-            <property name="rightMargin">
-             <number>16</number>
-            </property>
-            <property name="bottomMargin">
-             <number>16</number>
-            </property>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_15">
-              <property name="spacing">
-               <number>0</number>
-              </property>
-              <item>
-               <widget class="StrongBodyLabel" name="StrongBodyLabel_11">
-                <property name="text">
-                 <string>选项卡3</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="CaptionLabel" name="CaptionLabel_8">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string>功能简介</string>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-                <property name="lightColor" stdset="0">
-                 <color alpha="150">
-                  <red>0</red>
-                  <green>0</green>
-                  <blue>0</blue>
-                 </color>
-                </property>
-                <property name="darkColor" stdset="0">
-                 <color alpha="200">
-                  <red>255</red>
-                  <green>255</green>
-                  <blue>255</blue>
-                 </color>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <widget class="SwitchButton" name="SwitchButton_2"/>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="CardWidget" name="CardWidget_10">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>70</height>
-            </size>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_12">
-            <property name="leftMargin">
-             <number>16</number>
-            </property>
-            <property name="topMargin">
-             <number>16</number>
-            </property>
-            <property name="rightMargin">
-             <number>16</number>
-            </property>
-            <property name="bottomMargin">
-             <number>16</number>
-            </property>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_16">
-              <property name="spacing">
-               <number>0</number>
-              </property>
-              <item>
-               <widget class="StrongBodyLabel" name="StrongBodyLabel_12">
-                <property name="text">
-                 <string>选项卡3</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="CaptionLabel" name="CaptionLabel_9">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string>功能简介</string>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-                <property name="lightColor" stdset="0">
-                 <color alpha="150">
-                  <red>0</red>
-                  <green>0</green>
-                  <blue>0</blue>
-                 </color>
-                </property>
-                <property name="darkColor" stdset="0">
-                 <color alpha="200">
-                  <red>255</red>
-                  <green>255</green>
-                  <blue>255</blue>
-                 </color>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <widget class="RadioButton" name="RadioButton_3">
-              <property name="text">
-               <string>选项1</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="RadioButton" name="RadioButton_4">
-              <property name="text">
-               <string>选项2</string>
+               <string>测试通知</string>
               </property>
              </widget>
             </item>
@@ -804,25 +545,6 @@
           </widget>
          </item>
         </layout>
-       </item>
-       <item>
-        <widget class="QFrame" name="blank">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <property name="lineWidth">
-          <number>5</number>
-         </property>
-        </widget>
        </item>
        <item>
         <spacer name="verticalSpacer">
@@ -860,11 +582,6 @@
    <header>qfluentwidgets</header>
   </customwidget>
   <customwidget>
-   <class>RadioButton</class>
-   <extends>QRadioButton</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
-  <customwidget>
    <class>CardWidget</class>
    <extends>QFrame</extends>
    <header>qfluentwidgets</header>
@@ -877,17 +594,17 @@
    <container>1</container>
   </customwidget>
   <customwidget>
+   <class>TimePicker</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
    <class>CaptionLabel</class>
    <extends>QLabel</extends>
    <header>qfluentwidgets</header>
   </customwidget>
   <customwidget>
    <class>StrongBodyLabel</class>
-   <extends>QLabel</extends>
-   <header>qfluentwidgets</header>
-  </customwidget>
-  <customwidget>
-   <class>SubtitleLabel</class>
    <extends>QLabel</extends>
    <header>qfluentwidgets</header>
   </customwidget>
@@ -899,6 +616,11 @@
   <customwidget>
    <class>LineEdit</class>
    <extends>QLineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SpinBox</class>
+   <extends>QSpinBox</extends>
    <header>qfluentwidgets</header>
   </customwidget>
  </customwidgets>
