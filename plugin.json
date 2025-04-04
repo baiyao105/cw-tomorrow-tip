@@ -1,6 +1,6 @@
 {
     "name": "明日课程提醒",
-    "description": "在设定的时间时，显示明日课程信息",
+    "description": "在设定的时间显示明日课程信息",
     "version": "1.0.0",
     "plugin_ver": 1,
     "author": "白杳",
