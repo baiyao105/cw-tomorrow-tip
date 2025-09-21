@@ -1,13 +1,11 @@
 {
-    "name": "Class Widgets 插件模板",
-    "description": "这里是简介，用简短的语言描述插件的功能。",
+    "name": "明日课程提醒",
+    "description": "在设定的时间显示明日课程信息",
     "version": "1.0.0",
     "plugin_ver": 1,
-    "author": "你的名字",
+    "author": "白杳",
     "settings": true,
-
-    "url": "https://github.com/{repo-owner}/{repo}",
+    "url": "https://github.com/baiyao105/cw-tomorrow-tip",
     "branch": "main",
-
-    "update_date": "yyyy/mm/dd"
+    "update_date": "2025/04/03"
 }
